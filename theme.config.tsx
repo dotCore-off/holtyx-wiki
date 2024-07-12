@@ -4,14 +4,14 @@ import { DocsThemeConfig } from 'nextra-theme-docs'
 const config: DocsThemeConfig = {
   logo: <span>My Project</span>,
   project: {
-    link: 'https://github.com/shuding/nextra-docs-template',
+    link: 'https://github.com/dotCore-off/holtyx-wiki',
   },
   chat: {
-    link: 'https://discord.com',
+    link: 'https://discord.com/holtyx',
   },
-  docsRepositoryBase: 'https://github.com/shuding/nextra-docs-template',
+  docsRepositoryBase: 'https://github.com/dotCore-off/holtyx-wiki',
   footer: {
-    text: 'Nextra Docs Template',
+    text: 'Holtyx Wiki',
   },
 }
 
