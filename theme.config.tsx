@@ -2,7 +2,7 @@ import React from 'react'
 import { DocsThemeConfig } from 'nextra-theme-docs'
 
 const config: DocsThemeConfig = {
-  logo: <span>My Project</span>,
+  logo: <span>Holtyx Games</span>,
   project: {
     link: 'https://github.com/dotCore-off/holtyx-wiki',
   },
@@ -13,6 +13,13 @@ const config: DocsThemeConfig = {
   footer: {
     text: 'Holtyx Wiki',
   },
+  i18n: [
+    { locale: 'en-US', text: 'English' },
+    { locale: 'fr-FR', text: 'Français' },
+    { locale: 'de-DE', text: 'Deutsch' },
+    { locale: 'ru-RU', text: 'Pусский' },
+    { locale: 'bg-BG', text: 'български' }
+  ]
 }
 
 export default config

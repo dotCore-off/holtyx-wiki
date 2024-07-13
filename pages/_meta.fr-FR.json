@@ -1,0 +1,23 @@
+{
+  "index": "Introduction",
+  "faq": "❓FAQ",
+  "legal" : {
+    "title": "⚖️ LEGAL"
+  },
+  "rules" : {
+    "title": "🔨 RULES"
+  },
+  "gmod" : {
+    "title": "🎮 GARRY'S MOD"
+  },
+  "about": {
+    "title": "About",
+    "type": "page"
+  },
+  "contact": {
+    "title": "Contact ↗",
+    "type": "page",
+    "href": "",
+    "newWindow": true
+  }
+}
