@@ -1,0 +1,116 @@
+import { Callout, FileTree, Tabs } from 'nextra/components'
+
+# 🤩 Optimizing your game
+<Callout type="info" emoji="ℹ️">
+    Parts of this page have been realized [using this Steam guide](https://steamcommunity.com/sharedfiles/filedetails/?id=1911349076), check it out.
+</Callout>
+
+## Switch to x86-64 branch
+<Callout type="info" emoji="ℹ️">
+    **x86-64 is an alternative branch of Garry's Mod** that features an **improved HTML engine** along with **64 bits** version of the game, known 
+    for bringing **performance boost** at the cost of rare issues due to its **experimental / beta aspect**.  
+
+    **Most players and developers use it instead of the default branch as of today.**
+</Callout>
+
+### Tutorial
+1. **Open Steam**, go in your **Library** and **click on Garry's Mod**
+2. Hit the **Cog button** *(Manage)* and click on ``Properties...``
+3. Go in **BETAS tab** in the opened window
+4. In the **Beta dropdown**, select ``x86-x64 - Chromium + 64-bit binaries`` version
+5. Once download is over *(~150 Mo)*, **you're done!**
+
+Now when you launch your game, you'll be prompted a **Version popup**.
+**Select the** ``64-bit`` one and click **Play** to launch Garry's Mod.
+
+<Callout type="info" emoji="ℹ️">
+    You can go back to default branch by selecting ``None`` in **Beta dropdown of Step 4**.
+</Callout>
+
+## Advanced adjustments
+<Callout type="warning" emoji="⚠️">
+    Bellow tips **won't work** or **have the same impact** for everyone.  
+    Keep in mind that **you must follow given steps correctly** in order to not break your game.
+</Callout>
+
+### Game properties
+<Callout type="warning" emoji="⚠️">
+    Paths / file locations that are given bellow can **vary based on where your Steam and Garry's mod are installed**.
+</Callout>
+
+1. Find ``hl2.exe`` and open the **Properties** *(right-click on it)*
+> ``C:\Program Files (x86)\Steam\steamapps\common\GarrysMod\``
+2. In **Compatibility** tab, toggle the ``Disable fullscreen optimizations`` option
+3. Click on **Change high DPI settings** and then toggle ``Override high DPI scaling behavior`` by **Application**
+4. Search for ``gmod.exe`` and **repeat these steps**
+> ``C:\Program Files (x86)\Steam\steamapps\common\GarrysMod\bin\``
+
+### Video settings
+<Tabs items={['Average / Good computer', 'Low-end device']}>
+  <Tabs.Tab>
+    - **Model Detail: High**
+    - **Texture Detail: High**
+    - **Shader Detail: High**
+    - **Water Detail: Reflect All**
+    - **Shadow Detail: High**
+    - **Color Correction: Enabled**
+    - **Anti-Aliasing: 4x MSAA**
+    - **Filtering Mode: 16x**
+    - **Wait for vertical sync: Off**
+    - **Motion Blur: Off**
+    - **Field of view: 90 - 100**
+    - **Multicore Rendering: On**
+    - **High Dynamic Range: Full**
+  </Tabs.Tab>
+  <Tabs.Tab>
+    - **Model Detail: Medium - Low**
+    - **Texture Detail: Medium - Low**
+    - **Shader Detail: Low**
+    - **Water Detail: Simple Reflections**
+    - **Shadow Detail: Low**
+    - **Color Correction: Disabled**
+    - **Anti-Aliasing: 2x - None**
+    - **Filtering Mode: Lower than 16x**
+    - **Wait for vertical sync: Off**
+    - **Motion Blur: Off**
+    - **Field of view: 90 - 100**
+    - **Multicore Rendering: On**
+    - **High Dynamic Range: Full**
+  </Tabs.Tab>
+</Tabs>
+
+### Launch options
+<Callout type="warning" emoji="⚠️">
+    **This is the most "technical" part of this tutorial**, but if you follow steps correctly, **it should be okay**.  
+
+    As mentioned above, some settings aren't really applied on every game launch so we will force the game to read and execute our optimal parameters.
+</Callout>
+
+1. Locate your **Garry's Mod local files**
+> ``C:\Program Files (x86)\Steam\steamapps\common\GarrysMod\``
+2. **Go in** ``garrysmod/cfg/``
+3. **Open** ``autoexec.cfg`` file with a text editor *(Notepad, Sublime Text, etc.)*
+4. **Copy the following code block and paste it** into the ``autoexec.cfg`` file
+```
+// Multi-core rendering settings
+gmod_mcore_test 1
+mat_queue_mode 2
+cl_threaded_bone_setup 1
+cl_threaded_client_leaf_system 1
+r_threaded_client_shadow_manager 1
+r_threaded_particles 1
+r_threaded_renderables 1
+r_queued_ropes 1
+studio_queue_mode 1
+mat_specular 1
+
+// Change "999" to the # of your refresh rate if you're on a laptop
+fps_max 999 
+// Deletes unsubscribed addons
+menu_cleanupgmas 
+// Saves settings to config.cfg
+host_writeconfig
+```
+5. **Save changes** and go back to your **Properties** menu
+6. Go in **Set Launch Options** and paste the following command
+> ``+exec autoexec.cfg``
