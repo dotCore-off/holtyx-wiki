@@ -1,0 +1,37 @@
+# 🪙 Rewards system
+
+## Rewards
+While playing on our servers, you will be **granted coins, gems or even items as rewards**.  
+**The following events will give you coins for example:**
+- **killing another player** (10 coins)
+- **killing hunter player during Bounty round** (25.000 coins)
+- **winning a round** (25 coins as a Victim, 250 as a Killer)
+- **playing a taunt** (taunt duration in seconds)
+- *and many more...*
+
+These are the **default rewards**, but we decided to **scale them** based on bellow factors.
+
+## Multipliers
+For each given reward, **a multiplier is added** based on following scenarios.
+
+### For playercount
+- Total players **< 10** = ``x0.5``
+- Total players **< 15** = ``x0.75``
+- Total players **< 20** = ``x1``
+- Total players **>= 25** = ``x2``
+
+### For VIP ranks
+- **Gold** player = ``x1.25``
+- **Adamant** player = ``x2``
+- **Aether** player = ``x3``
+
+### For special rounds
+- If a **victim survives during Infected** = ``x2``
+- If a **killer survives during Juggernaught** = ``x2``
+- If **hunted player survives during Bounty** = ``x2``
+
+### Calculation
+After completing each of above verifications, a **final multiplier is given and applied to base reward**.  
+**Here are some examples:**
+- You are a **Aether** user (x3), there are **21 players online** (x1) and **no special round**, **the final multiplier will be x4** *- killing a player will give you 10 x 4 = 40 coins*
+- You have **no VIP rank**, there are **7 players online** (x0.5) and **no special round**, **the final multiplier will be x0.5** *- killing a player will give you 10 x 0.5 = 5 coins*
