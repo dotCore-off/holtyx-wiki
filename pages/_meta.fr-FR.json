@@ -2,16 +2,16 @@
   "index": "Introduction",
   "faq": "❓FAQ",
   "legal" : {
-    "title": "⚖️ LEGAL"
+    "title": "⚖️ LÉGAL"
   },
   "rules" : {
-    "title": "🔨 RULES"
+    "title": "🔨 RÈGLEMENTS"
   },
   "gmod" : {
     "title": "🎮 GARRY'S MOD"
   },
   "about": {
-    "title": "About",
+    "title": "A propos",
     "type": "page"
   },
   "contact": {
