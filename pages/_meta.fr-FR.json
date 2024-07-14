@@ -10,14 +10,22 @@
   "gmod" : {
     "title": "🎮 GARRY'S MOD"
   },
-  "about": {
-    "title": "A propos",
-    "type": "page"
+  "website": {
+    "title": "Site officiel",
+    "type": "page",
+    "href": "#",
+    "newWindow": false
+  },
+  "store": {
+    "title": "Notre boutique",
+    "type": "page",
+    "href": "https://shop.holtyx.com",
+    "newWindow": true
   },
   "contact": {
     "title": "Contact ↗",
     "type": "page",
-    "href": "",
+    "href": "https://discord.gg/holtyx",
     "newWindow": true
   }
 }
