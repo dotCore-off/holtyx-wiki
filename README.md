@@ -1,23 +1,24 @@
-# Nextra Docs Template 
-
-This is a template for creating documentation with [Nextra](https://nextra.site).
-
-[**Live Demo →**](https://nextra-docs-template.vercel.app)
-
-[![](.github/screenshot.png)](https://nextra-docs-template.vercel.app)
-
-## Quick Start
-
-Click the button to clone this repository and deploy it on Vercel:
-
-[![](https://vercel.com/button)](https://vercel.com/new/clone?s=https%3A%2F%2Fgithub.com%2Fshuding%2Fnextra-docs-template&showOptionalTeamCreation=false)
+# Holtyx Wiki 
+This is our official wiki repository based on [Nextra](https://nextra.site/).  
+[**Live Website →**](https://wiki.holtyx.com)
 
 ## Local Development
-
 First, run `pnpm i` to install the dependencies.
+Then, run `pnpm dev` to start the development server and visit [localhost:3000](localhost:3000).
 
-Then, run `pnpm dev` to start the development server and visit localhost:3000.
+## Contributing
+You can contribute to this wiki by creating a new fork, working on something *(spell check, new page, translation, etc.)* and then pushing a Pull Request.
+Pull requests should be named like this:
+```bash
+// New content
+[WIKI] Description of your changes
+- example: [WIKI] Added a new page
 
-## License
+// Translation
+[LANGUAGE] Concerned page
+- example: [DE] Legal hub page
 
-This project is licensed under the MIT License.
+// Fix
+[FIX] Description of your fixes
+- example: [FIX] Typo in French sidebar
+```
