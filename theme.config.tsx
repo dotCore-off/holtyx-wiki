@@ -10,8 +10,17 @@ const config: DocsThemeConfig = {
       <meta property="og:title" content="Holtyx Wiki" />
       <meta property="og:description" content="Official knowledgebase of Holtyx Games community, powered by and for its members." />
       <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+      <script defer src="https://cloud.umami.is/script.js" data-website-id="9a652323-3122-40ad-95fd-04e2e99b0c6b"></script>
     </>
   ),
+  banner: {
+    key: '2.0-release',
+    text: (
+      <a href="https://discord.gg/holtyx" target="_blank">
+        🎉 Join our Discord today →
+      </a>
+    )
+  },
   logo: (
     <>
       <Image alt="Holtyx Games logo" src={ mainLogo } />
