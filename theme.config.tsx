@@ -14,10 +14,10 @@ const config: DocsThemeConfig = {
     </>
   ),
   banner: {
-    key: '2.0-release',
+    key: 'wiki-launch',
     text: (
       <a href="https://discord.gg/holtyx" target="_blank">
-        🎉 Join our Discord today →
+        🎉 We just launched our wiki, report any issue here →
       </a>
     )
   },
