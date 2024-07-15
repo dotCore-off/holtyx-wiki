@@ -10,6 +10,9 @@
   "gmod" : {
     "title": "🎮 GARRY'S MOD"
   },
+  "staff" : {
+    "title": "🔒 STAFF TEAM"
+  },
   "website": {
     "title": "Official website",
     "type": "page",
