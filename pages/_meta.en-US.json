@@ -25,6 +25,12 @@
     "href": "https://shop.holtyx.com",
     "newWindow": true
   },
+  "forums": {
+    "title": "Game Forums",
+    "type": "page",
+    "href": "https://forums.holtyx.com",
+    "newWindow": true
+  },
   "contact": {
     "title": "Contact ↗",
     "type": "page",
