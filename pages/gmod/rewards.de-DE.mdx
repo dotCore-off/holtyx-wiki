@@ -1,0 +1,37 @@
+# 🪙 Belohnungssystem
+
+## Rewards
+Während Sie auf unseren Servern spielen, erhalten Sie **Coins, Gems ​​oder sogar Items als Belohnung**.  
+**Bei den folgenden Ereignissen erhalten Sie beispielsweise Coins:**
+- **kille einen anderen Spieler** (10 coins)
+- **man killt den Spieler welcher als Bounty ausgewählt wurde, während der Special Runde "Bounty Hunter"** (25.000 coins)
+- **Gewinne eine Runde** (25 coins als Victim, 250 als Killer)
+- **Spiele einen Taunt** (taunt dauer in Sekunden)
+- *und mehr...*
+
+Dies sind die **Standardbelohnungen**, wir haben uns jedoch entschieden, sie basierend auf den folgenden Faktoren zu **skalieren**.
+
+## Multiplikatoren
+Für jede gegebene Belohnung wird **ein Multiplikator hinzugefügt**, basierend auf den folgenden Szenarien.
+
+### Für die Spieleranzahl
+- Gesamtzahl der Spieler **< 10** = ``x0.5``
+- Gesamtzahl der Spieler **< 15** = ``x0.75``
+- Gesamtzahl der Spieler **< 20** = ``x1``
+- Gesamtzahl der Spieler **>= 25** = ``x2``
+
+### Für VIP Ranks
+- **Gold** Spieler = ``x1.25``
+- **Adamant** Spieler = ``x2``
+- **Aether** Spieler = ``x3``
+
+### Für Special Runden
+- Wenn ein **victim während Infection überlebt** = ``x2``
+- Wenn ein **killer während Juggernaut überlebt** = ``x2``
+- Wenn **der Spieler welcher als "Bounty" ausgewählt wurde überlebt** = ``x2``
+
+### Berechnung
+Nach Abschluss jeder der oben genannten Überprüfungen wird ein **endgültiger Multiplikator vergeben und auf die Basisprämie angewendet**.  
+**Hier sind ein paar Beispiele:**
+- Sie sind ein **Aether** user (x3), es sind **21 players auf dem Server** (x1) und **keine special Runde**, **Der endgültige Multiplikator wird x4 sein** *- Wenn Sie einen Spieler töten, erhalten Sie 10 x 4 = 40 Coins*
+- Sie haben **keinen VIP Rank**, es sind **7 players auf dem Server** (x0.5) und **keine special Runde**, **Der endgültige Multiplikator beträgt x0,5** * – wenn Sie einen Spieler töten, erhalten Sie 10 x 0,5 = 5 Coins*
