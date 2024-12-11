@@ -1,0 +1,41 @@
+import { Callout, FileTree } from 'nextra/components'
+
+# 🟪 Fehlende CSS Content
+<Callout type="info" emoji="ℹ️">
+    [Hier ist ein Video, falls Sie all das hier nicht lesen möchten.](https://youtu.be/8AfuNpX8RQA)
+</Callout>
+
+## 1. Ohne Counter-Strike Source game
+### Anforderungen
+- [ ] Garry's Mod muss **installiert** sein.
+- [ ] [WinRAR](https://www.win-rar.com/start.html?&L=10) oder jede andere Software, die **ZIP-/RAR-Archive extrahieren** kann.
+
+### Tutorial
+1. Finden Sie eine Website, die **das Herunterladen von CSS Content anbietet** *(wir empfehlen [diese](https://gmodcontent.com/))*
+2. **Extrahieren Sie den ZIP-/RAR-Ordner in einen neuen Ordner** mit dem Namen „csscontent“, zum Beispiel
+<FileTree>
+  <FileTree.Folder name="csscontent" defaultOpen>
+    <FileTree.File name="materials" />
+    <FileTree.File name="models" />
+    <FileTree.File name="particles" />
+    <FileTree.File name="sound" />
+  </FileTree.Folder>
+</FileTree>
+3. **Suchen Sie den Ordner Ihres Garry's Mod-Addons** und **verschieben** Sie den Ordner „csscontent“ da rein.  
+4. **Neustarten / Starten Sie das Spiel**, Content sollte funktionieren.  
+
+## 2. Mit Counter-Strike Source game
+<Callout type="info" emoji="ℹ️">
+    Garry's Mod sollte **automatisch CSS Content laden** wenn festgestellt wird, dass **Counter-Strike Source installiert ist**.  
+    Die folgenden Schritte können stattdessen zum **manuellen Methode** verwendet werden.
+</Callout>
+
+### Anforderungen
+- [ ] Garry's Mod und Counter-Strike Source **sollten installiert sein**
+- [ ] Garry's Mod muss auf den **Counter-Strike Source Ordner** zugreifen können.
+
+### Tutorial
+1. **Start Garry's Mod**
+2. In **main menu**, klick auf **🎮 Games button** unten rechts
+3. **Bestätige**, dass Counter-Strike Source ✅ ist, **überprüfe es** wenn nicht
+4. **CSS content sollte erfolgreich installiert sein!**
