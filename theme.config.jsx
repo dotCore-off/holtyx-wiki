@@ -3,7 +3,7 @@ import { DocsThemeConfig } from 'nextra-theme-docs'
 import mainLogo from './public/banner.png'
 import Image from 'next/image'
 
-const config: DocsThemeConfig = {
+export default {
   head: (
     <>
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -34,7 +34,10 @@ const config: DocsThemeConfig = {
   },
   docsRepositoryBase: 'https://github.com/dotCore-off/holtyx-wiki',
   footer: {
-    text: 'Holtyx Wiki',
+    content: (
+      <span>
+      </span>
+    )
   },
   i18n: [
     { locale: 'en-US', text: 'English' },
@@ -44,5 +47,3 @@ const config: DocsThemeConfig = {
     { locale: 'bg-BG', text: 'български' }
   ]
 }
-
-export default config
