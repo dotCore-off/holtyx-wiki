@@ -5,3 +5,12 @@
 footer {
     display: none;
 }
+  
+.snowflake {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 50%;
+    filter: drop-shadow(0 0 10px white);
+}

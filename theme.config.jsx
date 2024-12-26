@@ -15,7 +15,7 @@ export default {
   ),
   banner: {
     key: 'wiki-launch',
-    text: (
+    content: (
       <a href="https://discord.gg/holtyx" target="_blank">
         🎉 We just launched our wiki, report any issue here →
       </a>
