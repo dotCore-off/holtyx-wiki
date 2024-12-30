@@ -6,6 +6,7 @@ import Image from 'next/image'
 export default {
   head: (
     <>
+      <title>Holtyx Wiki</title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta property="og:title" content="Holtyx Wiki" />
       <meta property="og:description" content="Official knowledgebase of Holtyx Games community, powered by and for its members." />
