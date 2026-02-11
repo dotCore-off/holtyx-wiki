@@ -1,10 +1,41 @@
-import { Cards, Card } from 'nextra/components'
+import { Callout, FileTree } from 'nextra/components'
 
-# Cette page n'a pas encore été traduite 😵‍💫
+# 🟪 Absence du contenu CSS
+<Callout type="info" emoji="ℹ️">
+    [Voici une vidéo que vous pouvez utiliser si vous ne voulez pas lire les étapes ci-dessous](https://youtu.be/8AfuNpX8RQA)
+</Callout>
 
-<Cards>
-  <Card title="💬 Rejoins notre Discord" href="https://discord.gg/holtyx" />
-  <Card title="➡️ Aide-nous à traduire !" href="https://github.com/dotCore-off/holtyx-wiki" />
-</Cards>
+## 1. Sans le jeu Counter-Strike Source
+### Exigences
+- [ ] Garry's Mod doit être **installé**
+- [ ] [WinRAR](https://www.win-rar.com/start.html?&L=10) ou n'importe quel logiciel capable d'**extraire des archives ZIP / RAR**
 
-*Vous pouvez utiliser la version ``English`` via le menu déroulant en bas à gauche pour afficher cette page.*
+### Tutoriel
+1. Trouver un site web qui **offre un téléchargement vers le contenu CSS** *(nous recommendons [celui-ci](https://gmodcontent.com/))*
+2. **Extraire l'archive ZIP / RAR vers un nouveau dossier** appelé par exemple ``csscontent``
+<FileTree>
+  <FileTree.Folder name="csscontent" defaultOpen>
+    <FileTree.File name="materials" />
+    <FileTree.File name="models" />
+    <FileTree.File name="particles" />
+    <FileTree.File name="sound" />
+  </FileTree.Folder>
+</FileTree>
+3. **Trouver le dossier addons de votre Garry's Mod** sur votre ordinateur et déplacer le dossier ``csscontent`` à l'intérieur
+4. **Redémarrer / démarrer votre jeu**, le contenu devrait être correctement monté
+
+## 2. Avec le jeu Counter-Strike Source
+<Callout type="info" emoji="ℹ️"> 
+    Garry's mod devrait **automatiquement monté le contenu CSS** s'il détecte que **Counter-Strike Source est installé**.
+    Les étapes ci-dessous peuvent être utilisé pour **monter le contenu manuellement**.
+</Callout>
+
+### Exigences
+- [ ] Garry's Mod et Counter-Strike Source doivent être **installés**
+- [ ] Garry's Mod doit pouvoir avoir accès au **dossier Counter-Strike Source**
+
+### Tutoriel
+1. **Lancer Garry's Mod**
+2. Dans le **menu principal**, cliquer sur **🎮** en bas à droite
+3. **Vérifier** que Counter-Strike Source est ✅, **cocher le** si ce n'est pas le cas
+4. **Le contenu CSS devrait être monté!**
